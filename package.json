@@ -22,11 +22,12 @@
     "@typechain/ethers-v6": "^0.5.1",
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "4.3.7",
-    "@types/mocha": "^10.0.9",
+    "@types/mocha": "10.0.0",
     "@types/node": "^22.7.5",
     "chai": "4.3.7",
     "ethers": "^6.13.4",
     "hardhat-gas-reporter": "^2.2.1",
+    "mocha": "^10.0.0",
     "solidity-coverage": "^0.8.13",
     "typechain": "^8.3.2"
   }
