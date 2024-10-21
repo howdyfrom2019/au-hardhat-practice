@@ -2,14 +2,14 @@ import { loadFixture } from "@nomicfoundation/hardhat-network-helpers";
 import { expect } from "chai";
 import hre from "hardhat";
 
-describe("SpecialNumber.sol 테스트", () => {
+describe("FCFS.sol 테스트", () => {
   async function deploySpecialNumber() {
-    const factory = await hre.ethers.getContractFactory("SpecialNumber");
+    const factory = await hre.ethers.getContractFactory("FCFS");
     const contract = await factory.deploy();
     await contract.waitForDeployment();
     const address = await contract.getAddress();
 
-    console.log("SpecialNumber deployed to:", address);
+    console.log("FCFS deployed to:", address);
 
     return { address };
   }

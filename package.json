@@ -10,6 +10,12 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   },
+  "scripts": {
+    "test": "npx hardhat compile && npx mocha test",
+    "dev": "npx hardhat node",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
     "@nomicfoundation/hardhat-ethers": "^3.0.8",
