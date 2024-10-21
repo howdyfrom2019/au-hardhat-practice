@@ -14,7 +14,7 @@
     "test": "npx hardhat compile && npx mocha test",
     "dev": "npx hardhat node",
     "compile": "npx hardhat compile",
-    "deploy": "npx hardhat run"
+    "deploy": "npx hardhat ignition deploy"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
