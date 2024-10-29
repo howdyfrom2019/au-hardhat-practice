@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.27;
 
-contract Game3 {
+contract Puzzle3 {
   bool public isWon;
   mapping(address => uint) balances;
 

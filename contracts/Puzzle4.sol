@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.27;
 
-contract Game4 {
+contract Puzzle4 {
   bool public isWon;
 
   mapping(address => mapping(address => bool)) nested;
