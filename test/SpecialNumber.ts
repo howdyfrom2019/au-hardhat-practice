@@ -9,7 +9,7 @@ describe("SpecialNumber.sol 테스트", () => {
     await contract.waitForDeployment();
     const address = await contract.getAddress();
 
-    console.log("SpecialNumber deployed to:", address);
+    // console.log("SpecialNumber deployed to:", address);
 
     return { address };
   }

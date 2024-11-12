@@ -9,7 +9,7 @@ describe("FCFS.sol 테스트", () => {
 
   before(async () => {
     [testEOA] = await hre.ethers.getSigners();
-    console.log("EOA Address:", testEOA);
+    // console.log("EOA Address:", testEOA);
   });
 
   it("개인 지갑으로 FCFS.attempt()를 실행시키면 에러가 발생한다.", async () => {
@@ -27,10 +27,10 @@ describe("FCFS.sol 테스트", () => {
       testEOA
     );
     const tx = await contract.attempt();
-    console.log("Transaction sent from EOA:", tx.hash);
+    // console.log("Transaction sent from EOA:", tx.hash);
 
     const receipt = await tx.wait();
-    console.log("Transaction mined from EOA:", receipt);
+    // console.log("Transaction mined from EOA:", receipt);
   });
 
   it("caller 컨트랙트로 FCFS.attempt()를 실행시키면 성공한다.", async () => {
@@ -55,7 +55,7 @@ describe("FCFS.sol 테스트", () => {
     );
     const tx = await contract.callAttempt(fcfsAddress);
     const receipt = await tx.wait();
-    console.log("FROM CALLER", receipt);
+    // console.log("FROM CALLER", receipt);
     expect(receipt?.status).equal(1);
   });
 });
