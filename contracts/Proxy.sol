@@ -6,7 +6,7 @@ pragma solidity ^0.8.27;
 
 import "./StorageSlot.sol";
 
-contract Proxy {
+contract ProxyCustom {
   /**
    * local value for when not applying storage slot
    */
