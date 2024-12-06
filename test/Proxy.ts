@@ -4,7 +4,7 @@ import hre from "hardhat";
 
 describe("@/test/Proxy.sol", () => {
   async function deploy() {
-    const Proxy = await hre.ethers.getContractFactory("Proxy");
+    const Proxy = await hre.ethers.getContractFactory("ProxyCustom");
     const proxy = await Proxy.deploy();
     await proxy.waitForDeployment();
 
